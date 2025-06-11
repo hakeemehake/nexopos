@@ -5,7 +5,7 @@
         </div>
         <div class="flex-shrink-0 flex justify-between items-center p-2 border-b ns-box-header">
             <div>
-                <h1 class="text-xl font-bold text-primary text-center">{{ __( 'Define Quantity' ) }}</h1>
+                <h1 class="text-xl font-bold text-primary text-center">{{ __( 'Enter Weight KG' ) }}</h1>
             </div>
             <div>
                 <ns-close-button @click="closePopup()"></ns-close-button>
@@ -104,7 +104,7 @@ export default {
                  * when a product is already on the cart product.id is not set but
                  * product.product_id is defined
                  */
-                const holdQuantity  =   POS.getStockUsage( product.$original().id, data.unit_quantity_id ) - ( product.quantity || 0 );
+                const holdQuantity  =   POS.getStockUsage( product.$original().id, data.unit_quantity_id ) + ( product.quantity || 0 );
 
                 /**
                  * This checks if there is enough
