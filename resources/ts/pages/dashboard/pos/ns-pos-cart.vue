@@ -12,50 +12,10 @@
         <div class="rounded shadow ns-tab-item flex-auto flex overflow-hidden">
             <div class="cart-table flex flex-auto flex-col overflow-hidden">
                 <div id="cart-toolbox" class="w-full p-2 border-b">
-                    <div class="border rounded overflow-hidden">
-                        <div class="flex flex-wrap">
-                            <div class="ns-button">
-                                <button @click="openNotePopup()" class="w-full h-10 px-3 outline-none">
-                                    <i class="las la-comment"></i>
-                                    <span class="ml-1 hidden md:inline-block">{{ __( 'Comments' ) }}</span>
-                                </button>
-                            </div>
-                            <hr class="h-10" style="width: 1px">
-                            <div class="ns-button">
-                                <button @click="selectTaxGroup()" class="w-full h-10 px-3 outline-none flex items-center">
-                                    <i class="las la-balance-scale-left"></i>
-                                    <span class="ml-1 hidden md:inline-block">{{ __( 'Taxes' ) }}</span>
-                                    <span v-if="order.taxes && order.taxes.length > 0" class="ml-1 rounded-full flex items-center justify-center h-6 w-6 bg-info-secondary text-white">{{ order.taxes.length }}</span>
-                                </button>
-                            </div>
-                            <hr class="h-10" style="width: 1px">
-                            <div class="ns-button">
-                                <button @click="selectCoupon()" class="w-full h-10 px-3 outline-none flex items-center">
-                                    <i class="las la-tags"></i>
-                                    <span class="ml-1 hidden md:inline-block">{{ __( 'Coupons' ) }}</span>
-                                    <span v-if="order.coupons && order.coupons.length > 0" class="ml-1 rounded-full flex items-center justify-center h-6 w-6 bg-info-secondary text-white">{{ order.coupons.length }}</span>
-                                </button>
-                            </div>
-                            <hr class="h-10" style="width: 1px">
-                            <div class="ns-button">
-                                <button @click="defineOrderSettings()" class="w-full h-10 px-3 outline-none flex items-center">
-                                    <i class="las la-tools"></i>
-                                    <span class="ml-1 hidden md:inline-block">{{ __( 'Settings' ) }}</span>
-                                </button>
-                            </div>
-                            <hr class="h-10" style="width: 1px">
-                            <div class="ns-button" v-if="options.ns_pos_quick_product === 'yes'">
-                                <button @click="openAddQuickProduct()" class="w-full h-10 px-3 outline-none flex items-center">
-                                    <i class="las la-plus"></i>
-                                    <span class="ml-1 hidden md:inline-block">{{ __( 'Product' ) }}</span>
-                                </button>
-                            </div>
-                            <hr class="h-10" style="width: 1px">
-                        </div>
-                    </div>
+             
                 </div>
                 <div id="cart-table-header" class="w-full text-primary font-semibold flex">
-                    <div class="w-full lg:w-4/6 p-2 border border-l-0 border-t-0">{{ __( 'Product' ) }}</div>
+                    <div class="w-full lg:w-4/6 p-2 border border-l-0 border-t-0">{{ __( 'item' ) }}</div>
                     <div class="hidden lg:flex lg:w-1/6 p-2 border-b border-t-0">{{ __( 'Weight KG' ) }}</div>
                     <div class="hidden lg:flex lg:w-1/6 p-2 border border-r-0 border-t-0">{{ __( 'Total' ) }}</div>
                 </div>
