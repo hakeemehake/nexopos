@@ -56,7 +56,7 @@
                 </div>
                 <div id="cart-table-header" class="w-full text-primary font-semibold flex">
                     <div class="w-full lg:w-4/6 p-2 border border-l-0 border-t-0">{{ __( 'Product' ) }}</div>
-                    <div class="hidden lg:flex lg:w-1/6 p-2 border-b border-t-0">{{ __( 'Quantity' ) }}</div>
+                    <div class="hidden lg:flex lg:w-1/6 p-2 border-b border-t-0">{{ __( 'Weight KG' ) }}</div>
                     <div class="hidden lg:flex lg:w-1/6 p-2 border border-r-0 border-t-0">{{ __( 'Total' ) }}</div>
                 </div>
                 <div id="cart-products-table" class="flex flex-auto flex-col overflow-auto">
